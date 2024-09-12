@@ -1,0 +1,219 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+/* setting the height of html so that background can cover screen */
+html {
+    height: 100%;
+}
+/* setting the background image to cover screen */
+body {
+    background-image: url(images/bgblack.jpg);
+    height: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; /* did this to make pages unscrollable */
+}
+/* creating design parameters for all content boxes*/
+header {
+    display: block;
+    background-color: rgba(223, 207, 141, 0.7);
+    height: 100px;
+    min-height: 100px; 
+    width: 500px;
+    min-width: 500px;
+    /* googled how to find an exact font in CSS */
+    font-family: "Inknut Antiqua", serif;
+    text-align: center;
+    font-size: large;
+    line-height: 1.2;
+}
+nav {
+    display: block;
+    background-color: rgba(223, 207, 141, 0.7);
+    margin: 0px;
+    height: 840px;
+    width: 150px;
+    min-width: 150px;
+
+}
+/* with some googling and an hour of trial and error I figured out how to make a vertical nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 152px;
+    background-color: rgba(223, 207, 141, 0);
+  }
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-style: ridge;
+    border-color: #000;
+    background-color: #FFFFFF;
+    font-family: "Inknut Antiqua", serif;
+    text-align: center;
+    font-size: large;
+}
+/* learned about the hover selector */
+li a:hover {
+    background-color: #FFFFFF;
+    opacity: 80%;
+}
+
+/* learned some of the position property and used its values to position my content boxes */
+main {
+    height: 82%;
+    min-height: 82%;
+    position: relative;
+    top: -830px;
+    right: -155px;
+    width: 80%;
+    min-width: 80%;
+}
+footer {
+    height: 100px;
+    min-height: 100px; 
+    width: 350px;
+    min-width: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 1417px;
+    display: block;
+    background-color: rgba(223, 207, 141, 0.7);
+    border-style: double;
+    border-width: 3px;
+}
+/* configuring and positioning my text boxes */
+.column {
+    height: 56%;
+    min-height: 56%;
+    width: 25%;
+    min-width: 25%;
+    position: relative;
+    left: 10px;
+    margin-bottom: 15px;
+    background-color:rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 12px;
+    text-align: center;
+}
+.row {
+    height: 35%;
+    min-height: 35%;
+    width: 40%;
+    min-width: 40%;
+    position: relative;
+    left: 10px;
+    margin-top: 15px;
+    background-color:rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 12px;
+    text-align: center;
+}
+/* configuring and positioning my image boxes */
+/* I did not know how to make an image autofit inside its content box, so i had
+to look it up and learned what flexboxes are */
+.topimg {
+    position: absolute;
+    top: 0px;
+    right: 150px;
+    height: 300px;
+    width: 600px;
+    border-style: groove;
+    border-color: #898365;
+    border-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.topimg img {
+    flex-shrink: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+.bottomimg {
+    position: absolute;
+    bottom: 0px;
+    right: 150px;
+    height: 300px;
+    width: 600px;
+    border-style: groove;
+    border-color: #898365;
+    border-width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.bottomimg img {
+    flex-shrink: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+.pagetitle {
+    position: absolute;
+    bottom: 500px;
+    left: 400px;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 62px;
+    color: #FFFFFF;
+}
+footer a {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 45px;
+    position: absolute;
+    top: -15px;
+    right: 85px;
+    color: #000;
+}
+footer a:hover {
+    opacity: 50%;
+}
+.divider {
+    position: absolute;
+    top: 340px;
+    right: 152px;
+    height: 67px;
+    min-height: 50px;
+    width: 636px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.divider img {
+    flex-shrink: 1;
+    min-width: 100%;
+    min-height: 100%;
+}
+.attribution {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    color: #FFFFFF;
+    font-size: x-small;
+}
+.attribution a {
+    color:#FFFFFF;
+}
+.attribution a:hover {
+    opacity: 50%;
+}
+.games {
+    position: absolute;
+    top: 500px;
+    right: 50px;
+    color: #FFFFFF;
+    font-size: x-small;
+}   
