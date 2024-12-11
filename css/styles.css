@@ -1,0 +1,396 @@
+/*css reset*/
+/* * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 1px solid red;
+}*/
+
+#wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+    background: linear-gradient(135deg, #e4e3d3, #d9d7c4, #b8b197);
+
+}
+
+/*JavaScript animations*/
+
+/* Initially set the body to be invisible */
+.container-lg {
+    opacity: 0;
+    transition: opacity 2s ease-in, linear 1s; /* Make sure visibility changes after the fade-in */
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  
+/* When the page has fully loaded, set the body to be visible and fade in */
+.container-lg.loaded {
+    opacity: 1;
+    visibility: visible;
+    min-height: 100vh;
+}
+
+  
+
+.mobile {
+    background-image: linear-gradient(rgba(49, 92, 43, 0.75), rgba(72, 106, 65, 0.75));
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.mobile a {
+    text-decoration: none;
+    color: #06070e;
+    font-weight: 800;
+}
+
+.decorate {
+    font-size: 5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #8C271E;
+}
+
+header {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    margin-top: 10%;
+}
+
+header h1 {
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #06070e;
+}
+
+/* Restrict the navbar height and align elements */
+.navbar {
+    height: auto; /* Navbar height adapts to content */
+    border-top: 10px solid #626c66;
+    border-left: 10px solid #626c66;
+    border-right: 10px solid #626c66;
+    border-top-style: groove;
+    border-right-style: groove;
+    border-left-style: groove;
+    padding: 0; /* Remove extra padding */
+    background-color: #8C271E;
+}
+
+/* Style for the dropdown nav container */
+.collapse {
+    background-image: url('images/open-scroll.png'); /* Path to the open-scroll image */
+    background-size: 100% auto; /* Ensure the image covers the entire dropdown area */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-position: calc(50% - 8px) center; /* Shift image 10px to the left */
+    height: 100%;
+    margin: 0 auto; /* Center the dropdown horizontally */
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.navbar-toggler {
+    padding: 0; /* Remove padding */
+    margin: 0 auto; /* Center the button horizontally */
+    background: none; /* No background */
+    border: none; /* Remove borders */
+    display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw; /* Button spans up to 80% of the viewport width */
+    max-height: 50px; /* Limit the button's height to prevent oversized nav */
+    width: 100%; /* Allow it to fill its parent container width */
+    height: auto; /* Automatically adjusts height */
+}
+
+
+
+.nav-item {
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0.4em;
+    justify-items: center;
+}
+
+.navbar-toggler img {
+    display: block; /* Remove inline element spacing */
+    width: 100%; /* Fill the button width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image height doesn’t exceed the button */
+}
+
+.container-lg {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.container-lg p {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+/*Style rules for home page*/
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.malazan, .games {
+    max-width: 100%;
+    height: auto;
+    border: 15px solid #626c66;
+    border-radius: 2%;
+    border-style: groove;
+}
+
+.divider {
+    width: 100%; /* Full width of the container */
+    height: 100px; /* Adjust to match your divider's height */
+    background-image: url('images/MainBodyDivider.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Scale the divider properly */
+    margin: -5px 0; /* Control spacing between elements */
+}
+
+/*Style rules for C# project page*/
+.csharp-projects {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.csharp-projects img {
+    max-width: 100%; /* Ensure images don't overflow their containers */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline spacing issues */
+    border: 15px solid #626c66;
+    border-style: groove;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+}
+
+.csharp-projects h2, p {
+    font-family: "EB Garamond", serif;
+}
+
+.csharp-projects p {
+    padding: 5%;
+}
+
+.csharp-projects h2 {
+    background-color: #8C271E;
+    color: whitesmoke;
+}
+
+.chess, .tictactoe, .budgettool {
+    margin-bottom: 4em;
+}
+
+.row img {
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #626c66;
+    border-radius: 2%;
+}
+
+/*Style rules for web projects page*/
+
+.row h2 {
+    font-family: "EB Garamond", serif;
+    text-decoration-line: underline overline;
+    margin-top: 2%;
+}
+
+.row h2 a {
+    text-decoration: none;
+    color: #06070e;
+}
+
+.row h2 a:hover {
+    color: #8C271E;
+}
+
+.row p {
+    padding: 5%;
+}
+
+/*Style rules for contact page*/
+.social {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+.social img {
+    display: inline-block;
+    max-width: 20%;
+    height: auto;
+    margin-top: 2em;
+}
+
+.social p {
+    display: block;
+    max-width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    display: block;
+    background-image: linear-gradient(rgba(72, 106, 65, 0.75), rgba(49, 92, 43, 0.75));
+    text-align: center;
+    margin-top: auto;
+    color: whitesmoke;
+}
+
+footer a {
+    font-family: "EB Garamond", serif;
+    text-decoration: dotted;
+    color: #06070e;
+}
+
+/*query for tablets*/
+@media screen and (min-width: 768px) {
+
+    .collapse {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    .csharp-projects img {
+        display: block; /* Ensure the images are block elements */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+    }
+
+}
+
+/*query for desktop*/
+@media screen and (min-width: 1000px) {
+
+    .collapse {
+        background-image: none;
+        text-align: left;
+        margin: 0;
+    }
+
+    header {
+        margin-top: 2%;
+    }
+
+    /*Converting nav. Didn't specify the items as columns so have to do it the CSS way*/
+    .nav-item {
+        text-decoration: overline underline;
+    }
+
+    .nav-item a {
+        font-size: x-large;
+        font-family: "Garamond", serif;
+        font-weight: bolder;
+    }
+
+    .nav-item a:hover {
+        color: #e4e3d3;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .nav-link {
+        text-align: center;
+        padding: 0.5em;
+    }
+
+    .container.text-center.sites {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 4em;
+        max-width: 100%;
+    }
+
+    /*Home Page*/
+    .home-text {
+        margin: 0 auto;
+    }
+
+    .home-text p {
+        margin-bottom: 3em;
+        padding: 2em;
+    }
+
+    /*Web Projects Page*/
+    .container.text-center.A-Frame {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Creates two equal columns */
+        gap: 4em; /* Adds some space between the sections */
+    }
+    
+    .container.text-center.A-Frame .section1,
+    .container.text-center.A-Frame .section2 {
+        display: grid;
+        grid-template-columns: auto auto; /* 2x2 grid for images in each section */
+        gap: 3em 0; /* Adds some space between the images */
+    }    
+
+    /*Contact Page*/
+    .container-lg .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3em;
+        margin-top: 5em;
+    }
+
+    .container-lg.home {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 2em;
+        gap: 4em;
+    }
+
+    .container-lg {
+        margin-top: 2em;
+    }
+
+    .csharp-projects {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 5em;
+    }
+
+    main p {
+        font-size: large;
+    }
+
+    .navbar {
+        border-top: 10px solid #626c66;
+        border-left: 10px solid #626c66;
+        border-right: 10px solid #626c66;
+        border-bottom: 10px solid #626c66;
+        border-top-style: groove;
+        border-right-style: groove;
+        border-left-style: groove;
+        border-bottom-style: groove;
+    }
+
+}
+
+/* query for large desktop */
+@media screen and (min-width: 1921px), print {
+
+}
