@@ -81,7 +81,7 @@ header h1 {
 
 /* Style for the dropdown nav container */
 .collapse {
-    background-image: url('Portfolio/images/open-scroll.png'); /* Path to the open-scroll image */
+    background-image: url('/Portfolio/images/open-scroll.png'); /* Path to the open-scroll image */
     background-size: 100% auto; /* Ensure the image covers the entire dropdown area */
     background-repeat: no-repeat; /* Prevent tiling */
     background-position: calc(50% - 8px) center; /* Shift image 10px to the left */
@@ -150,7 +150,7 @@ header h1 {
 .divider {
     width: 100%; /* Full width of the container */
     height: 100px; /* Adjust to match your divider's height */
-    background-image: url('Portfolio/images/MainBodyDivider.png');
+    background-image: url('/Portfolio/images/MainBodyDivider.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; /* Scale the divider properly */
